@@ -2,9 +2,7 @@ public class WheelR extends Car{
 
     public static String spinWR;
 
-    public WheelR(String spinWR){
-        super(String.valueOf(spinWR));
-    }
+
     public WheelR(String name, String color, int yearOfcar) { //конструктор родителя
         super(name, color, yearOfcar);
     }

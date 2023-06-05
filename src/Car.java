@@ -1,5 +1,3 @@
-import com.sun.xml.internal.ws.api.model.wsdl.WSDLOutput;
-
 import java.util.Scanner;
 
 public class Car{
@@ -16,8 +14,23 @@ public class Car{
         this.characters = characters;
     }
 
-    public Car(String spinWR){
-        this.spinWR = spinWR;
+    public static void choise(){
+        while (true){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("С какой стороны происходит крепление правого колеса? (слева, справа): ");
+        String  choisefromC = scanner.nextLine();
+            if (choisefromC.equals("слева")) {
+                WheelR.spinWR = choisefromC;
+                WheelL.spinWL = "справа";
+                System.out.println("Верно! Свойство объекту 'Правое колесо' присвоено: " +
+                        WheelR.spinWR + "\nСоответственно левое справа! Свойство объекту 'Левое колесо' присвоено: " +
+                        WheelL.spinWL);
+                break;
+
+            }else {
+                System.out.println("Ну и чё ты ввёл??? Давай-ка ещё раз!");
+            }
+            }
     }
 
     public static void spinWeels(){

@@ -1,10 +1,7 @@
-public class WheelL extends WheelR{
+public class WheelL extends Car{
 
-    public String spinWL;
+    public static String spinWL;
 
-    public WheelL(String spinWL){
-        super(String.valueOf(spinWL));
-    }
 
     public WheelL(String name, String color, int yearOfcar) { //конструктор наследуемый
         super(name, color, yearOfcar);
