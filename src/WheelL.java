@@ -8,7 +8,6 @@ public class WheelL extends Car{
     }
 
     public static void spin2(){
-        //spinWeels();
         System.out.println("Крутится левое колесо!");
     }
 }
